@@ -10,7 +10,7 @@ This repository contains additional material for the [special](https://github.co
 
 A walkthrough tutorial in the form of a Jupyter notebook can be found in the `tutorials/` folder. It can be visualized directly here on GitHub (by just clicking on them), or using the nbviewer service.
 
-> [GitHub](./tutorials/walkthrough.ipynb) / [nbviewer](http://nbviewer.jupyter.org/github/VChristiaens/special_extras/blob/master/tutorials/walkthrough.ipynb) / [binder](https://mybinder.org/v2/gh/VChristiaens/special_extras/master?filepath=tutorials%2Fwalkthrough.ipynb)
+> [GitHub](./tutorials/walkthrough.ipynb) / [nbviewer](http://nbviewer.jupyter.org/github/VChristiaens/special_extras/blob/main/tutorials/walkthrough.ipynb) / [binder](https://mybinder.org/v2/gh/VChristiaens/special_extras/main?filepath=tutorials%2Fwalkthrough.ipynb)
 
 This tutorial covers:
 
