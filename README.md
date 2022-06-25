@@ -18,7 +18,7 @@ This tutorial covers:
 - calculating a spectral correlation matrix (e.g. for use in spectral fits involving IFS measurements);
 - calculating specific spectral indices;
 - using the MCMC (``emcee``) sampler to infer posterior distributions on spectral model parameters;
-- using the nested (``nestle``) sampler to infer posterior distributions on spectral model parameters;
+- using nested (``nestle`` or ``ultranest``) samplers to infer posterior distributions on spectral model parameters;
 - finding the best-fit spectral template in a given library, with 2 free parameters (scaling and extinction).
 
 
