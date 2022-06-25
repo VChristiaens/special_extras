@@ -10,16 +10,19 @@ __all__ = ['bts_reader',
            'tmp_reader']
 
 import numpy as np
-import os
 import pandas as pd
+from pathlib import Path
 from special.utils_spec import convert_F_units, nrefrac
 from special.fits import open_fits
 
+par_path = Path(__file__).parent
+
 def bts_reader(params, ground=True):
     # snippet to read BT-SETTL fits files and return a tuple: lbda (mu), spec (SI)
+    rel_path = '../static/btsettl15_models/'
+    mod_path = str((par_path / rel_path).resolve())+'/'
+    
     mod_units = 'cgs' # careful: input in cgs
-    path = os.path.dirname(os.path.dirname(os.path.realpath("__file__")))
-    mod_path = path+'/static/btsettl15_models/'
     filename = mod_path+'btsettl15_t{:.0f}_g{:.1f}0_z-0.00_SED.txt'.format(params[0],params[1])        
     lbda = []
     flux = []
@@ -50,8 +53,8 @@ def bts_reader(params, ground=True):
 
 def filter_reader(filename):
     # snippet to read filter files and return a tuple: lbda (mu), transmission
-    path = os.path.dirname(os.path.dirname(os.path.realpath("__file__")))
-    filter_path = path+"/static/filters/"
+    rel_path = '../static/filters/'
+    filter_path = str((par_path / rel_path).resolve())+'/'
     filt_table = pd.read_csv(filter_path+filename, sep=' ', header=0, 
                              skipinitialspace=True)
     keys = filt_table.keys()
@@ -76,8 +79,8 @@ def filter_reader(filename):
     
 
 def tmp_reader(tmp_name, verbose=False):
-    path = os.path.dirname(os.path.dirname(os.path.realpath("__file__")))
-    inpath_tmp=  path+'/static/MSL/'
+    rel_path = '../static/MSL/'
+    inpath_tmp = str((par_path / rel_path).resolve())+'/'
     if verbose:
         print("opening {}".format(tmp_name))
     spec_model = open_fits(inpath_tmp+tmp_name, verbose=False,
