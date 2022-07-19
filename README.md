@@ -24,7 +24,7 @@ This tutorial covers:
 
 ## [Datasets](./datasets)
 
-The data used in the tutorial are located in the `datasets/` folder, and correspond to the J1900-3645 b/B (aka. CrA-9 b/B) spectrum acquired from VLT/SPHERE-IFS, VLT/SPHERE-IRDIS and VLT/NACO high-contrast imaging data presented in [Christiaens et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.6117C/abstract).
+The data used in the tutorial are located in the `datasets/` folder. These correspond to (i) the J1900-3645 b/B (aka. CrA-9 b/B) spectrum acquired from VLT/SPHERE-IFS, VLT/SPHERE-IRDIS and VLT/NACO high-contrast imaging data, and (ii) the SPHERE-IFS datacube in which the stellar PSF has been modelled and subtracted (i.e. highlighting the low-mass companion). More details are available in [Christiaens et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.6117C/abstract).
 
 
 ## [Models and templates](./static)
